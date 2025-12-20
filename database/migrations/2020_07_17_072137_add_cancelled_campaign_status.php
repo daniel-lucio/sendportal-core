@@ -11,7 +11,6 @@ class AddCancelledCampaignStatus extends UpgradeMigration
 
         DB::table($campaign_statuses)
             ->insert([
-                'id' => 5,
                 'name' => 'Cancelled',
             ]);
     }
